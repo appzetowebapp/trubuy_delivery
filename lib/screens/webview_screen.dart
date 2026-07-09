@@ -2491,7 +2491,7 @@ class _WebViewScreenState extends State<WebViewScreen>
                 )
               else
                 OfflineScreen(onRetry: _retryLoad),
-              _buildMovableFAB(),
+            if (Platform.isAndroid) _buildMovableFAB(),
             ],
           ),
         ),
